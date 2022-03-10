@@ -1,0 +1,75 @@
+---
+title: "Papers"
+---
+
+::: panel-tabset
+## Crypto
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "Crypto")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+
+## StableCoins
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "Stablecoins")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+
+## CBDC
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "CBDC")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+
+## Blockchain
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "blockchain")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+
+## NFT
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "nft")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+
+## Smart Contracts
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "smart_contracts")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+
+## DeFi
+
+```{r echo=FALSE, results='asis'}
+library(DT)
+library("readxl")
+arxiv<- read_excel("data_crypto.xlsx", sheet = "DeFi")
+arxiv$`Date Submitted` <- format(as.Date(as.character(arxiv$`Date Submitted`)), "%Y-%m-%d")
+datatable(arxiv, options = list(pageLength = 5),escape=FALSE, class = 'cell-border stripe')
+```
+:::
